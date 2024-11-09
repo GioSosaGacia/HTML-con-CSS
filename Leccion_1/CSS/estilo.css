@@ -1,0 +1,109 @@
+/* librerias para visual estudio code
+Para ayuda -> HTML CSS Support
+Para seleccionar mas rapido los elemento-> IntelliSense for CSS class names in HTML 
+permite seleccionar los elementos de id y class -> CSS Peek*/
+
+
+/* para que un estilo tome prioridad podemos usar !important y ese apartado tendra prioridad ejemplo */
+/* h1{
+    color: black !important
+}*/
+
+/* selector universal se aplica a todos los elementos de la pagina y se aplica usando el '*' */
+*{
+
+}
+
+body{
+    background-color: #737b79;
+}
+/* estilos de tipo id: permite o indica que es unico dentro de nuestra pagina  */
+#titulo{
+    color: #e7e6d7 ;
+    text-align: center;
+}
+
+/* Para definir una clase la iniciamos con un punto . + el nombre de la clase */
+.centrar{
+    text-align: center;
+    color: #e7e6d7;
+    
+}
+.texto-grande{
+    font-size: 20px;
+}
+
+.green{
+    color: #badcc4;
+    border: 1px solid;
+    /* ancho del borde, lo podemos aplicar con 4,3 y 2 valores en pixeles(px)
+    ,tambien; thin para delgado, medium para mediano, thick para grueso o en px */
+    border-width: 3px 5px 7px 9px;
+    /* border color tambien podemos cambiar el color en cada lado agregando los 4 colores,
+    hsla o rgba ambos para agregar transparencia con a = alfa el cual aplica la transparencia,
+    borde-color: hsla(203, 39%, 44%, 0.774*/
+    border-color: #061d1e #74c0b6 beige blue;
+}
+
+.aqua{
+    color: #74c0b6;
+    /* dashed -> linea punteada o discontinuo */
+    border: 2px dashed; 
+}
+
+.black{
+    color:#061d1e;
+    /* double linea doble para el border, dotted -> linea punteada, ver los tipos de bordes aun hay más*/
+    border: 3px double;
+}
+
+/* punteado */
+.dotted{
+    color: #badcc4;
+    border: dotted;
+}
+
+/* border con surco */
+.solido{
+    border:  10px groove rgb(215, 228, 227);
+}
+
+/* borde con cresta */
+.cresta{
+    border: 5px ridge;
+}
+
+/* borde con recuadro */
+.recuadro{
+    border: 5px inset;
+}
+
+/* borde inverso -> outset, tambien ahi sin borde -> border: none; y hidden: oculto;*/
+.outset{
+    border: 5px outset;
+}
+
+/* mixto, agregando cuatro tipos diferentes de border */
+.mixto{
+    font-size: 30px;
+    border-style: dotted solid dashed double ;;
+    
+}
+
+/* borde con radio */
+.borde-radio{
+    font-size: 30px;
+    border: solid whitesmoke;
+    border-radius: 15px;
+    border-width: 5px;
+}
+
+/* border redondiado de 1 o 2 esquinas */
+.borde-redondiado{
+    border: solid #74c0b6;
+    border-radius: 20px 0px 10px 0px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+}
