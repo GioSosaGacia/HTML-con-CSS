@@ -1,0 +1,53 @@
+
+h1{
+    text-align: center;
+    color: cadetblue;
+}
+
+div{
+/* cuando se agregan propiedades ccomo el padding,marging o border los px que usamos se suman al elemento */
+    padding: 10px;
+    border: 1px solid #457b9d;
+    /* podemos usar margin auto para centrar elementos, este marging lo suamos para el ejemplo de inherit*/
+    /* margin-left: 100px; */
+
+    /* marging-colapsed hace referencia el margin sup e inf ya que al tener dos div el margen superior y el inferior de un elemento al otro 
+    es el mismo*/
+    margin: 20px;
+    background-color: rgb(226, 240, 203);
+    max-width: 300px;
+    /* outline se encuentra entre el margen y el borde, no suma contenido, ademas se instala por encima de los demas elementos */
+    /* outline: 10px solid #a8dadc;  */
+    /* es la separacion del borde y el outline */
+    /* outline-offset: 10px; */
+    /* box-sizing toma en cuenta el tamaño declarado del width, para que al agregar el border o margin nuestro elemento no cambie su tamaño*/
+    box-sizing: border-box;
+
+} 
+
+/* Caja 1 y 2 para usar el ejemplo de marging-colapsed,no suma los dos margings si no toma como referencia el marging con mayor valor que es 
+del elemento superior con 30px */
+.caja1{
+    padding: 10px;
+    border: 1px solid #457b9d;
+    margin: 30px;
+    background-color: rgb(226, 240, 203);
+    max-width: 300px;
+    box-sizing: border-box;
+
+}
+
+.caja2{
+    padding: 10px;
+    border: 1px solid #457b9d;
+    margin: 20px;
+    background-color: rgb(226, 240, 203);
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+/* lo usamos como ejemplo para el elemento p, lo comentamos para ver marging-collapsed */
+p.interno{
+    /* inherit hereda del div al p, margin-left 100px */
+    margin-left: inherit;
+}
