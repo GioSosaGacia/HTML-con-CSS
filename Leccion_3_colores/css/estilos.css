@@ -1,0 +1,57 @@
+/* si usamos un fondo y en nuestros alementos aplicamos transparencia 
+se alterarian los colores que tienen transparencia aplicada */
+
+*{
+    background-color: hsla(202, 38%, 94%, 0.5);
+}
+
+h1{
+    text-align: center;
+    color: #e63946;
+}
+
+.caja{
+    padding: 5px;
+    color: white;
+    width: 140px;
+    height: 110px;
+    text-align: center;
+    margin: 5px auto;
+    font-size: 20px;
+    float: left;
+
+}
+
+.rojo{
+    background-color: crimson;
+    
+}
+
+.rosa{
+    background-color: deeppink;
+    
+}
+.rgb{
+    background-color: rgb(131,56,236);
+}
+
+.rgba{
+    background-color: rgba(131, 56, 236, .5);
+}
+
+.hexadecimal{
+    background-color: #0091ad;
+}
+
+/* el ultimo par se usa para el alfa */
+.hexadecimal_transparencia{
+    background-color: #0091ad81;
+}
+/* hue saturation lightness y van de 0 a 100%* y el color del 1 al 360*/
+.hsl{
+    background-color: hsl(34, 57%, 70%);
+}
+
+.hsla{
+    background-color: hsla(34, 57%, 70%, .5);
+}
