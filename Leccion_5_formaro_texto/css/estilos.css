@@ -1,0 +1,110 @@
+/* tambien podemos usar las fuentes de google pegando el link
+sin las etiquetas style */
+/* google font documentation  */
+/* si queremos agregar mas de una fuente solo la concatenamos con el & family= + la fuente seleccionada */
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+h1{
+    color: darkcyan;
+    /* background-color: antiquewhite; */
+    text-align: center;
+    /* text-transform: uppercase; */
+    /* sombra ejes: x, y, sombra y color */
+    text-shadow: 2px 2px 2px #ced4da;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-decoration: overline underline;
+    /* Doto: CSS class for a variable style, nos muestra como agregar la fuente desde css */
+    font-family: "Doto", sans-serif;
+}
+
+.caja{
+    font-size: 18px;
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    background-color: #caecf5;
+    border-radius: 5px;
+    text-align:justify;
+    /* direccion del texto: rtl -> roght to left or ltr -> left to right */
+    direction: ltr;
+    /* indentación de texto */
+    text-indent: 15px;
+    /* espacio entre lineas */
+    line-height: 1.5;
+    /* nowrap -> no se envuelve en el div se sale del div y con normal no */
+    white-space: normal;
+    /* text-shadow: 1px 1px 1px #087b9b; */
+    
+}
+
+.cajaF{
+    padding: 5px;
+    width: 40%;
+    height: 80px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    float: left;
+    background-color: black;
+}
+.caja.serif{
+    background-color: #caecf5;
+}
+.fuente_times{
+    /* si tiene espacios va entre comillas '', si no separado por , */
+    /* si no puede cargar un tipo se pasa a times, serift = tipo */
+    font-family: 'Times New Roman', Times, serif;
+    /* Estilo de fuentes*/
+    font-style: normal;
+    /* ancho de la fuente */
+    font-weight: bolder;
+    /* La primera letra de cada palabre es mas grande */
+    /*  te permite darle estilo y formato a tu contenido HTML de varias formas. */
+    font-variant: small-caps;
+    font-size: 20px;
+    /* Tos estos atributos los podemos usar en una sola linea en orden especifico*/
+    /*  font-style, font-variant, font-weight, font-size/line-height, font-family; */
+    /* Ejemplo: font: italic small-caps bolder 20px Roboto, sans-serif; */
+}
+
+.fuente_georgia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-variant: normal;
+    /* 1em = 16px/16 se utiliza en navegadores como explorer*/
+    font-size: 1em;
+}
+
+.caja-sans{
+    background-color: #33485d;
+}
+.fuente_sans-serif{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    /* (vw o vh)) view width se adapta al ancho o alto de la ventana and viewport */
+    font-size: 3vw;
+}
+
+.fuente-verdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.caja-monospace{
+    background-color: #2ca96d;
+}
+/* monospace simula a una maquina de escribir */
+.fuente-monospace{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.caja-cursive{
+    background-color: #075211;
+}
+/* monospace simula a una maquina de escribir */
+.fuente-lucida{
+    font-family: 'Lucida Handwriting', cursive;
+}
