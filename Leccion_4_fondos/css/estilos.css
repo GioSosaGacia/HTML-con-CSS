@@ -1,0 +1,30 @@
+body{
+    /* background-color: rgba(30, 143, 255, 0.873);*/
+    color: rgb(8, 6, 0); 
+    /* para seleccionar una imagen usamos url, / para acceder a las carpetas */
+    /* background-image: url("/Leccion_4_fondos/img/cadle.jpg"); */
+    /* para que no se repita la imagen  */
+    /* background-repeat: no-repeat; */
+    /* Ubicacion de la imagen de fondo */
+    /* background-position: top; */ 
+
+    /*  determina si la posición de la imagen de fondo será fija dentro de la pantalla o
+     se desplazará con su bloque contenedor */
+    background-attachment: fixed; 
+
+    /* con background podemos aplicar los estilos anteriores en una sola lines
+    Tambien podemos agregar background position etc... menos attachment  */
+    background: rgba(30, 143, 255, 0.873) url("/Leccion_4_fondos/img/cadle.jpg");
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(176, 210, 244, .4);
+    border: 1px solid;
+    border-radius: 4px 3px 6px / 2px 4px;
+
+}
+
+p{
+    
+}
