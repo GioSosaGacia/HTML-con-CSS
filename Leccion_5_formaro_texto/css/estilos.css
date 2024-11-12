@@ -86,7 +86,7 @@ h1{
     font-style: oblique;
     font-weight: bold;
     /* (vw o vh)) view width se adapta al ancho o alto de la ventana and viewport */
-    font-size: 3vw;
+    font-size: 2vh;
 }
 
 .fuente-verdana{
