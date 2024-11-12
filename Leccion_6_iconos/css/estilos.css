@@ -1,0 +1,84 @@
+/* Estos dos son parte de la leccion de iconos */
+/* h1{
+    text-align: center;
+    color: crimson;
+}
+div{
+    padding: 15px;
+    margin: auto;
+    max-width: 400px;
+} */
+
+.icono_azul{
+    font-size: 2.5em;
+    color: cornflowerblue;
+}
+
+.icono-rojo{
+    font-size: 3em;
+    color: crimson;
+}
+
+.message{
+    font-size: 3em;
+    color: greenyellow;
+    vertical-align: middle;
+}
+
+.buscar{
+    vertical-align: middle;
+    color: blue;
+    font-size: 3em;
+}
+
+.envio{
+    vertical-align: middle;
+    color: rgb(0, 15, 5);
+    font-size: 3em;
+}
+
+.avion{
+    vertical-align: middle;
+    color: rgb(14, 133, 54);
+    font-size: 3em;
+}
+
+.juntos{
+    vertical-align: middle;
+    color: rgb(106, 50, 16);
+    font-size: 3em;
+}
+
+/* forma parte de la leccion de display */
+h1,div,p{
+    border: 3px solid blueviolet;
+    text-align: center;
+    color: cornflowerblue;
+    padding: 10px;
+    display: block;
+}
+
+/* con display none, se oculta un elemento y el espacion donde estaba tal elemento lo hace disponible
+para que otro ocupe su lugar  */
+/* h1{
+    display: none;
+} */
+
+/* con visibility no libera el espacio como dispkey none, auque no este el elemento sigue ocupando el 
+mismo espacio */
+/* p{
+    visibility: hidden;
+} */
+
+span{
+    display: inline;
+    border: 1px solid blue;
+}
+
+a{
+    display: block;
+}
+
+li{
+    display: inline;
+}
