@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+    color: #e63946;
+
+}
+
+div.contenedor{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    color: #457b9d;
+}
+
+/* Para aplicar un selector descediente, despues de las clases va el nombre del elemento separado por un espacio de la clase o clases */
+
+/* aqui se modificaran los parrafos que se encuentran dentro de un elemento div con la clase de contenedor */
+div.contenedor.descendiente p{
+    background-color: #fdffb6;
+}
+
+/* para seleccionar los hijos director usamos el simbolo > mas el nombre del elemento, solo selecciona los p que estan directamente dentro del elemento div y no otro elemento */
+div.contenedor.hijo > p{
+    background-color: #ffc6ff;
+}
+
+/* Es el elemento que se encuentra despues del elemento div, se una + seguido del elemento o los elementos que se aplicara el adyacente*/
+/* si no indicamos el div seleccionara cualquier otro elemento de nuestro HTML*/
+div.contenedor.adyacente + p{
+    background-color: #caffbf;
+}
+
+/* se usa el caracter de tilde ~ para seleccionar el tipo de hermano y se aplicara a todos los parrafos que se encuentren al mismo nivel*/
+div.contenedor.hermano ~ p{
+    background-color: #9bf6ff;
+}

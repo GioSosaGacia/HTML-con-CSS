@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Combinados</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Los selectores combinados: 1.Descendiente:  seleccionan elementos que son descendientes de otros selectores. No es necesario que sean hijos directos, como en este caso que tambien modufica el p que esta dentro de un section  -->
+
+    <!-- dependiendo la nesecidad sera el selector que se utilizara -->
+    <h1>Selecores combinados en CSS</h1>
+    <h2>Descendiente</h2>
+    <div class="contenedor descendiente">
+        Selectores descendientes (en cualquier nivel interno)
+        <p>Primer renglón</p>
+        <p>Segundo parrafo</p>
+        <section>
+            <p>Tercer renglón</p>
+        </section>
+    </div><br>
+    <!-- selector de tipo hijo: -->
+    <h2>Tipo child</h2>
+    <!-- solo selecciona los hijos directos -->
+    <div class="contenedor hijo">
+        Selectores Hijo(child)
+        <p>Primer renglón</p>
+        <p>Segundo parrafo</p>
+        <section>
+            <p>Tercer renglón</p>
+        </section>
+        <div>
+            <p>Cuarto Renglón</p>
+        </div>
+        <p>Quinto renglón</p>
+    </div><br>
+    <!-- selector de tipo sibling(Adjacente): -->
+    <h2>Tipo Adjacente</h2>
+    <div class="contenedor adyacente ">
+        Selector Adjacente
+        <p>Primer renglón</p>
+    </div>
+    <!-- se aplica adyacnte -->
+    <p>Segundo renglón</p>
+    <!-- a este no porque no se encuentra despues del div si no de un parrafo -->
+    <P>Tercer renglón</P>
+
+    <h2>Selector General de tipo Hermano/sibling</h2>
+    <!--Tipo Hijo/hermano selecciona todos los elementos hermanos despues del div -->
+    <div class="contenedor hermano ">
+        Selector Hermano o Sibling
+        <p>Primer renglón</p>
+    </div>
+    <!-- no dentro del div, pero Hermanos porque se encuantran al mismo nivel -->
+    <p>Segundo renglón</p>
+    <P>Tercer renglón</P>
+
+    
+</body>
+</html>
