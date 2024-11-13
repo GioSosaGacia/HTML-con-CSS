@@ -1,0 +1,50 @@
+
+h1{
+    color: crimson;
+}
+
+/* si un div esta contendo de un  absoluto el otro div puede ser cualquiera menos static para que funcione*/
+div.relativo{
+    max-width: 300px;
+    height: 200px;
+    position: relative;
+    /* top, left, right, botton van despues de position */
+    top: 10px;
+    left: 100px;
+    border: 3px solid cornflowerblue
+    
+}
+
+
+div.absoluto{
+    /* hace que los elementos se ajusten al tamaño de la pantalla que se esta utilizando, tablet, celular etc*/
+    /* max-width: 400px; */
+    /* width: 50%; */
+    border: 3px solid firebrick;
+    /* al usar auto el espacio de lado der e izq se vuelve el mismo, centrando el elemento 
+    y con width se ajusta al tamaño de la pantalla*/
+    /* margin: auto; */
+    /* cuando se usa el static los atributos top, left, right and botton no afectan al div */
+    position: absolute;
+    /* top: 20px;
+    left: 50; */
+    bottom: 20px;
+    right: 10px;
+
+}
+
+/* existen 5 tipos de posicionamiento
+1.static es el valor por default en el div y no se puede modificar con top, left, right and botton,
+2.relative se ajusta a los parametros de top, left, right and botton , 
+3.fixed o ajustado se ajusta al viewport que es la pantalla dependiendo los valores que tenga el, top, left, right and botton,
+    sirve para dejar elementos de manera fija como un menu
+4.absolute  se usa cuando estamos trabajando dentro de otro elemento div de manera absoluta al elemento que lo contiene,
+    div padre con un div hijo, y si solo es un div se ajusta al document body de la pantalla predeterminada
+5.sticky funciona como relativo mientras este dentro de su posicionamiento y como fixed(fijo)  cuando sale de su posicion 
+    sin embargo todo el tiempo se muestra y es ideal para usarlo en los menus o navegadores*/
+
+div.absoluto-1{
+    position: sticky;
+    top: 0;
+    border: 3px solid silver;
+}
