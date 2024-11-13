@@ -1,0 +1,138 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+div.estatico{
+    position: static;
+    /* cuando es estatico top, left, raght y botton no afectan al alemento  */
+    top: 10px;
+    padding: 5px;
+    border: 3px solid greenyellow;
+    background-color: whitesmoke; 
+
+}
+
+div.relativo{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding: 15px;
+    border: 3px solid blueviolet;
+    background-color: whitesmoke;
+    /* z-index: -1; */
+}
+
+div.absoluto{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 45px;
+    border: 3px solid cornflowerblue;
+    background-color: whitesmoke;
+    z-index: -1;
+}
+
+div.contenedor{
+    position: relative;
+    border: 3px dashed greenyellow;
+    width: 30%;
+    margin: auto;
+}
+
+img.imagen{
+    width: 100%;
+    opacity: .2;
+}
+div.centro{
+    position: absolute;
+    top: 50%;
+    /* border: 1px solid rgb(62, 96, 11); */
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div.cont{
+    border: 3px solid goldenrod;
+    width: 30%;
+    height: 70px;
+    margin: auto;
+    text-indent: 45px;
+    line-height: 1.5;
+    text-align: justify;
+    /* es cuando se sale un texto o info de nuestro div, por defecto usa overflow: visible; hidden lo oculta */
+    /* overflow: visible; */
+    /* overflow: scroll; */
+    /* aplica el scrool de ser necesario */
+    overflow: auto;
+    /* overflow-x: auto; y tambien esta para el eje y */
+}
+div.contenedor-1{
+    border: 3px dashed rgb(28, 116, 85);
+    width: 30%;
+    height: 100px;
+    text-indent: 45px;
+    line-height: 1.5;
+    text-align: justify;
+    overflow: auto;
+}
+
+div.contenedor-1.flotado{
+    float: left;
+}
+
+div.contenedor-1.flotado.contenedor-2{
+    border: 3px dashed greenyellow;
+}
+
+div.contenedor-1.flotado.contenedor-3{
+    border: 3px dashed cornflowerblue;
+    float: right;
+}
+div.contenedor-1.contenedor-4{
+    clear: both;
+    border: 3px dashed darkorange;
+    margin: auto;
+}
+
+div.contenedor-inlineblock{
+    width: 80%;
+    height: 20%;
+    overflow: auto;
+    margin: auto;
+    border: 3px dashed #a8dadc;
+}
+
+span{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: large;
+    background-color: #a8dadc;
+    border:  1px solid #457b9d;
+    height: 50px;
+    padding: 5px;
+    /* nos permite convertir elementos inline a inline-block para usar el margin y el padding  */
+    display: inline-block;
+}
+
+.menu{
+    /* quita los circulos del link */
+    list-style: none;
+    text-align: center;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 15px;
+    margin: 20px;
+    background-color: #e63946;
+    border-radius: 5px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}

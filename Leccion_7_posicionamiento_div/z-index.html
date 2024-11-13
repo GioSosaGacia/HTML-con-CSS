@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index en CSS</title>
+    <link rel="stylesheet" href="css/z-index.css">
+</head>
+<body>
+    <!-- Z-INDEX x-horizontal, y-vertical y z-va superponiendo los elements segun coincidan o segun el orden
+        en el que se van agregando, cuando no llevan el parametro de position y difernete a static son elementos no posicionado-->
+    <!-- puede ser position: relative, fixed, sticky y absolute -->
+    <!--z-index permite agregar un valor  -->
+    <!-- los elemntos no posicionados tienen el valor de z-index = a auto -->
+    <h1>Z-index en CSS</h1>
+    <div class="estatico">Elemento no posicionado(static)</div>
+    <div class="relativo">
+        Segund elemento Relativo
+        <div class="absoluto">
+            Tercer elemento Absoluto
+        </div>
+    </div>
+
+    <h1>Imagen con Texto Centrado</h1>
+    <div class="contenedor">
+        <img src="html5.png" alt="THML-5" 
+            class="imagen">
+        <div class="centro">Logo HTML5</div>
+    </div>
+
+    <h1>OverFlow en CSS</h1>
+    <!--  especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque. -->
+    <div class="cont">
+        Irure anim voluptate amet consectetur. Ipsum laboris veniam ex exercitation est mollit exercitation laborum non ut mollit. Ad laborum eu qui aute enim tempor sint do fugiat ut tempor ex reprehenderit. Ad incididunt deserunt labore eiusmod velit anim proident reprehenderit tempor commodo pariatur dolore fugiat sint. Reprehenderit excepteur laboris dolor sunt exercitation ad eiusmod commodo veniam consectetur cupidatat. Aliquip veniam incididunt magna magna tempor sint veniam ea culpa non. Nulla amet ad laborum officia mollit ut sunt commodo incididunt velit.
+        Cupidatat voluptate aute culpa aliquip minim cupidatat aliqua ipsum veniam eu anim. Sunt dolor nisi velit in. Nisi velit anim consequat elit sunt duis laboris esse minim.
+    </div>
+    
+    <h1>Propiedad Float en CSS</h1>
+    <div class="contenedor-1 flotado contenedor-2">
+        Irure anim voluptate amet consectetur. Ipsum laboris veniam ex exercitation est mollit exercitation laborum non ut mollit. Ad laborum eu qui aute enim tempor sint do fugiat ut tempor ex reprehenderit. Ad incididunt deserunt labore eiusmod velit anim proident reprehenderit tempor commodo pariatur dolore fugiat sint. 
+    </div>
+    <div class="contenedor-1 flotado contenedor-3">
+        Irure anim voluptate amet consectetur. Ipsum laboris veniam ex exercitation est mollit exercitation laborum non ut mollit. Ad laborum eu qui aute enim tempor sint do fugiat ut tempor ex reprehenderit. Ad incididunt deserunt labore eiusmod velit anim proident reprehenderit tempor commodo pariatur dolore fugiat sint. 
+    </div>
+    <!-- con clear cortamos el efecto de float -->
+    <div class="contenedor-1 contenedor-4">
+        Irure anim voluptate amet consectetur. Ipsum laboris veniam ex exercitation est mollit exercitation laborum non ut mollit. Ad laborum eu qui aute enim tempor sint do fugiat ut tempor ex reprehenderit. Ad incididunt deserunt labore eiusmod velit anim proident reprehenderit tempor commodo pariatur dolore fugiat sint. 
+    </div>
+
+    <h1>Propiedad Display(inlineblock) en CSS</h1>
+    <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+    </ul>
+    <!-- en elementos inline no podemos controlar elementos como el pargin o padding -->
+    <div class="contenedor-inlineblock">
+        Cupidatat voluptate aute <span>culpa aliquip</span> minim cupidatat aliqua ipsum veniam eu anim. Sunt dolor nisi velit in. Nisi velit anim consequat elit sunt duis laboris esse minim.
+        Cupidatat voluptate aute culpa aliquip minim cupidatat aliqua ipsum veniam eu anim. Sunt dolor nisi velit in. Nisi velit anim consequat elit sunt duis laboris esse minim.
+        Irure anim voluptate amet consectetur. Ipsum laboris veniam ex exercitation est mollit exercitation laborum non ut mollit. Ad laborum eu qui aute enim tempor sint do fugiat ut tempor ex reprehenderit. Ad incididunt deserunt labore eiusmod velit anim proident reprehenderit tempor commodo pariatur dolore fugiat sint.
+    </div>
+
+    
+    
+</body>
+</html>
