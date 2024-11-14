@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color: #e63046;
+}
+
+div.cont{
+    /* flex para aplicar el flexbox */
+    display: flex;
+    background-color: burlywood;
+
+    /* modifica la posicion o el orden de los elementos */
+    flex-direction: row;
+
+    /* envuelve los elementos dentro del div y los ajusta a la medida de la vetana, si no caben los elementos los pasa a la siguiente fila */
+    flex-wrap: wrap;
+
+    /* este suple a flex direction y flex wrap */
+    /* flex-flow: row wrap; */
+
+    /* permite cambiar la posicion de los elementos */
+    justify-content: space-around;
+    height: 300px;
+
+    /* con flext-star alinea los elementos a la parte sperior, tambien podemos usar flex-center, base-aline etc.*/
+    align-items: center;
+    /* lo mismo que items pero de manera vertical, si no lo aplicamos los elementos se alargan al tamaño del contenedor */
+    /* align-content: center; */
+    
+}
+
+/* modificar cada uno de los parrafos dentro del div > p modifica los elementos de tipo hijo, podemos modificar el orden y la posicion de los elementos */
+div.cont > p{
+    background-color: #4895ef;
+    color: #f1faee;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.2em;
+}
