@@ -1,0 +1,60 @@
+h1{
+    color: crimson;
+    text-align: center;
+}
+div.contenedor{
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    color: #457b9d;
+}
+
+/* Para utilizar los estados usamos los : y se desplegaran los estados diponibles para trabajarlos en los elementos html*/
+div.contenedor:hover{
+    background-color: #457b9d;
+    color: #f1faee;
+}
+
+/* Ocultar el parrafo */
+div.contenedor.oculto p{
+    display: none;
+}
+
+/* Muestra el parrafo usando hover */
+div.contenedor.oculto:hover p{
+    display: block;
+    background-color: #a8dadc;
+    color: #023e8a;
+    padding: 15px;
+    font-family: monospace;
+}
+
+/* al primer parrafo lo modificamos con el estado de fistt-child, se aplica al primer parrafo o primer hijo */
+div.contenedor.primero p:first-child{
+    /* todas las letras en mayusculas pero las letras capitales son un poco mas grandes */
+    font-variant: small-caps;
+}
+
+/* pseudo elementos, se aplica escribiendo 2 veces los dos puntos :: + el pseudo elemento*/
+div.contenedor p::selection{
+    color: red;
+    background-color: yellow;
+}
+
+div.contenedor p::first-line{
+    font-variant: small-caps;
+}
+
+div.contenedor p::first-letter{
+    font-variant: initial;
+    color: #8a5402;
+    font-size: 1.2em;
+}
+/* Para agregar contenido usamos content */
+div.contenedor p::before,p::after{
+    content: "-";
+    /* tambien podemos agregar un url */
+    /* content: url(); */
+}
