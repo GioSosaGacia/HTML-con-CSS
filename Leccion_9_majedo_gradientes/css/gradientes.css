@@ -29,12 +29,27 @@ div.contenedor{
     border: 3px solid #032425;
     padding: 15px;
     text-align: center;
-    background: radial-gradient(circle, #0d47a1, #42a5f5);
+    /* background: radial-gradient(circle, #0d47a1, #42a5f5); */
     /* 4to valor spread = propagar */
     box-shadow:  4px 4px 5px 2px rgb(193, 106, 19);
+    border-radius: 15px;
 }
 
 img{
     opacity: .6;
     width: 100%;
+    filter: brightness(2);
+}
+
+div.cabecero{
+    background-color: #4cc9f0;
+}
+
+div.cuerpo{
+    padding-top: 2px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    /* Pagina para el text-shadow generator */
+    text-shadow: 2px 2px 2px rgb(177, 177, 177);
+    color: #032425;
 }
